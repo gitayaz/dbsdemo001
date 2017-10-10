@@ -13,7 +13,7 @@ $personRecord->firstName = "Name $i";
 $personRecord->lastName = "LastName $i";
 $items[$i] = $personRecord;
 }
-header(Content-Type: application/json');
+header('Content-Type: application/json');
 $jsonOutput = json_encode($items);
 echo $jsonOutput;
 ?>
